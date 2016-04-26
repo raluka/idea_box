@@ -1,12 +1,14 @@
 ---
 ideas:
-- :title: app
-  :description: "social network for dogs\r\n\r\n"
-- :title: excursion
-  :description: take everyone to the zoo
-- :title: party
-  :description: dance all night and all day
-- :title: diet
-  :description: pizza all the time
-- :title: exercise
-  :description: play video games
+- title: app
+  description: "social network for dogs\r\n\r\n"
+- title: excursion
+  description: take everyone to the zoo
+- title: party
+  description: dance all night and all day
+- title: diet
+  description: pizza all the time
+- title: exercise
+  description: play video games
+- title: game
+  description: tic tac toe
