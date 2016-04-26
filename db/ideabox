@@ -1,0 +1,22 @@
+---
+ideas:
+- title: app
+  description: "social network for dogs\r\n\r\n"
+- title: excursion
+  description: take everyone to the zoo
+  rank: 1
+- title: party
+  description: dance all night and all day
+- title: diet
+  description: pizza all the time
+- title: exercise
+  description: play video games
+- title: game
+  description: tic tac toe
+- title: fun
+  description: dancing in the rain
+- title: menu
+  description: ice cream for dinner
+- title: get noticed
+  description: wear barefoot shoes
+  rank: 1
