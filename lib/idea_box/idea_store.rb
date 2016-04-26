@@ -4,7 +4,7 @@ class IdeaStore
 
   class << self
     def database
-      @database ||= YAML::Store.new "ideabox"
+      @database ||= YAML::Store.new('db/ideabox')
     end
 
     def raw_ideas

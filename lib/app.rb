@@ -1,5 +1,4 @@
-require './idea'
-require './idea_store'
+require 'idea_box'
 
 class IdeaBoxApp < Sinatra::Base
   configure :development do
@@ -7,6 +6,7 @@ class IdeaBoxApp < Sinatra::Base
   end
 
   set :method_override, true
+  set :root, 'lib/app'
 
   not_found do
     erb :error
@@ -18,7 +18,7 @@ class IdeaBoxApp < Sinatra::Base
 
   # Create new idea
   post '/' do
-    idea = IdeaStore.create(params[:idea])
+    IdeaStore.create(params[:idea])
     redirect '/'
   end
 
