@@ -13,7 +13,7 @@ class IdeaBoxApp < Sinatra::Base
   end
 
   get '/' do
-    erb :index, locals: { ideas: IdeaStore.all, idea: Idea.new(params) }
+    erb :index, locals: { ideas: IdeaStore.all.sort, idea: Idea.new(params) }
   end
 
   # Create new idea
@@ -31,7 +31,7 @@ class IdeaBoxApp < Sinatra::Base
   # Edit idea
   get '/:id/edit' do |id|
     idea = IdeaStore.find(id.to_i)
-    erb :edit, locals: { id: id, idea: idea }
+    erb :edit, locals: { idea: idea }
   end
 
   # Update idea after editing
